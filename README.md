@@ -47,10 +47,10 @@ After adding the marketplace, install the plugins you need from the `Stitch Skil
 #### Claude Code
 
 ```bash
-npx plugins add google-labs-code/stitch-skills --scope project --target claude-code
+npx plugins add google-labs-code/stitch-skills --scope user --target claude-code
 ```
 
-> **Personal note:** I primarily use Claude Code with `--scope user` instead of `--scope project` so the plugins are available across all my local repos without needing to re-add them each time.
+> **Personal note:** I use `--scope user` instead of `--scope project` so the plugins are available across all my local repos without needing to re-add them each time. Changed the example command above to reflect this as the default.
 
 ### 2. Install Skills Selectively
 Choose only the specific skills you need.
@@ -83,4 +83,4 @@ Core design workflows for creating, managing, and optimizing designs within Stit
 | Skill | Description | Prompt Example |
 |---|---|---|
 | [stitch::code-to-design](plugins/stitch-design/skills/code-to-design/) | Convert frontend code (React, Vue, etc.) to a Stitch Design via HTML extraction + design system + upload | *"Upload the frontend code at `/path/to/dashboard` into a Stitch project named 'Dashboard-Migration-2026'."* |
-| [stitch::generate-design](plugins/stitch-design/skills/generate-design/) | Generate new screens from text or images, edit existing screens, and create design variants | · *"Make a browse tab for a mobile app for romance and date night ideas."*<br>· *"Edit the login screen to add a 'Remember Me' checkbox and change the button color to blue."*<br>· *"Generate 3 design va
+| [stitch::generate-design](plugins/stitch-design/skills/generate-design/) | Generate new screens from text or images, edit existing screens, and create design variants | · *"Ma
